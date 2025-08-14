@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "vi-VN",
     baseUrl: "kawaiicassie.github.io/ocean",
-    ignorePatterns: ["private", "templates", ".obsidian", "content/*/Index.md"],
+    ignorePatterns: ["private", "templates", ".obsidian", "content/*/Index.md", "docs"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
@@ -29,25 +29,25 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf4ed",
-          lightgray: "#9893a5",
-          gray: "#eb6f92",
-          darkgray: "#575279",
-          dark: "#907aa9",
-          secondary: "#b4637a",
-          tertiary: "#9893a5",
-          highlight: "rgb(206, 202, 205)",
-          textHighlight: "#56949f",
+          light: "#faf4ed", //base
+          lightgray: "#f2e9e1", //overlay
+          gray: "#907aa9", //highlight background
+          darkgray: "#575279", //text
+          dark: "#907aa9", //overlay
+          secondary: "#b4637a", //rose
+          tertiary: "#9893a5", //muted
+          highlight: "rgb(223, 218, 217)", //hl medium
+          textHighlight: "#56949f", //foam
         },
         darkMode: {
           light: "#191724",
           lightgray: "#26233a",
-          gray: "#eb6f92",
+          gray: "#c4a7e7",
           darkgray: "#e0def4",
           dark: "#c4a7e7",
           secondary: "#eb6f92",
           tertiary: "#6e6a86",
-          highlight: "rgb(82, 79, 103)",
+          highlight: "rgb(64, 61, 82)",
           textHighlight: "#9ccfd8",
         },
       },

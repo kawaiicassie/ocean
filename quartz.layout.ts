@@ -5,11 +5,16 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+    Component.ConditionalRender({
+      component: Component.RecentNotes({ limit: 5, showTags: false }),
+      condition: (page) => page.fileData.slug === "index",
+    }),
+  ],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/kawaiicassie/ocean",
-      "Homepage": "https://kawaiicassie.github.io",
+      "HomePage": "https://kawaiicassie.github.io",
     },
   }),
 }
@@ -21,6 +26,7 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.Breadcrumbs(),
       condition: (page) => page.fileData.slug !== "index",
     }),
+    
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),

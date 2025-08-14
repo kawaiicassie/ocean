@@ -20,7 +20,8 @@ body {
 }
 
 .text-highlight {
-  background-color: var(--textHighlight);
+  background-color: var(--highlight);
+  color: var(--textHighlight);
   padding: 0 0.1rem;
   border-radius: 5px;
 }
