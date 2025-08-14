@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "vi-VN",
     baseUrl: "kawaiicassie.github.io/ocean",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "templates", ".obsidian", "content/*/Index.md"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",

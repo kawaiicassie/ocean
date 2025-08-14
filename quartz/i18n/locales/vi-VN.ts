@@ -23,7 +23,7 @@ export default {
     },
     backlinks: {
       title: "Liên Kết Ngược",
-      noBacklinksFound: "Không có liên kết ngược được tìm thấy",
+      noBacklinksFound: "Không có liên kết ngược nào được tìm thấy",
     },
     themeToggle: {
       lightMode: "Sáng",
@@ -81,7 +81,7 @@ export default {
       itemsUnderTag: ({ count }) =>
         count === 1 ? "1 mục gắn thẻ này." : `${count} mục gắn thẻ này.`,
       showingFirst: ({ count }) => `Hiển thị trước ${count} thẻ.`,
-      totalTags: ({ count }) => `Tìm thấy ${count} thẻ tổng cộng.`,
+      totalTags: ({ count }) => `Tìm thấy ${count} thẻ.`,
     },
   },
 } as const satisfies Translation
